@@ -6,6 +6,7 @@ refer: [https://github.com/jinlife/Synology_Photos_Face_Patch]
 准备工作:
    - 需要gcc编译环境，可以安装debian chroot
    - 或者使用 docker: docker pull gcc
+   - 也可以使用我编好的preload.so
    
 ## step1:
 创建一个文件preload.c，内容如下
@@ -40,7 +41,10 @@ cp preload.so /usr/lib/preload.so
 ```
 
 ## step4
-修改 pkg-SynologyPhotos-face-extraction.service
+修改 pkg-SynologyPhotos-face-extraction.service 
+
+ `vim /usr/local/lib/systemd/system/pkg-SynologyPhotos-face-extraction.service`
+
 在Service段中增加环境变量
 ```
 [Service]
