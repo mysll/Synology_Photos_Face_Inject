@@ -5,7 +5,7 @@ refer: [https://github.com/jinlife/Synology_Photos_Face_Patch]
 
 准备工作:
    - 需要gcc编译环境，可以安装debian chroot
-   - 或者使用 docker: docker pull gcc
+   - 或者使用 docker: `docker pull gcc`
    - 也可以使用我编好的preload.so
    
 ## step1:
