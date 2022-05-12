@@ -15,7 +15,6 @@ refer: [https://github.com/jinlife/Synology_Photos_Face_Patch]
 #include <stdio.h>
 
 long long _ZN9synophoto6plugin7network9IeNetwork11IsSupportedEv() {
-    printf("synophoto::plugin::network::IeNetwork::IsSupported return 0\n");
     return 0LL;
 }
 
