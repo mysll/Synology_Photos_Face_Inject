@@ -50,6 +50,7 @@ Environment="LD_PRELOAD=preload.so"
 ```
 最后重启一下服务
 ```
+systemctl daemon-reload
 systemctl restart pkg-SynologyPhotos-face-extraction
 ```
 
