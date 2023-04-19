@@ -1,7 +1,7 @@
 # Synology_Photos_Face_Inject
 synology photos 使用cpu进行人脸识别,使用这个方法可以随意升级，不会破坏原有应用
 
-refer: [~~https://github.com/jinlife/Synology_Photos_Face_Patch~~]
+refer: [https://github.com/jinlife/Synology_Photos_Face_Patch]
 
 准备工作:
    - 需要gcc编译环境，可以安装debian chroot
