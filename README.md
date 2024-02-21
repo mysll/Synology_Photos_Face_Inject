@@ -1,4 +1,5 @@
-# Synology_Photos_Face_Inject (NEW update: Support Photos version >= 1.6.2)
+# Synology_Photos_Face_Inject 
+## NEW update: Support Photos version >= 1.6.0)
 synology photos 使用cpu进行人脸识别,使用这个方法可以随意升级，不会破坏原有应用
 
 refer: [https://github.com/jinlife/Synology_Photos_Face_Patch]
