@@ -1,4 +1,4 @@
-# Synology_Photos_Face_Inject
+# Synology_Photos_Face_Inject (NEW update: Support Photos version >= 1.6.2)
 synology photos 使用cpu进行人脸识别,使用这个方法可以随意升级，不会破坏原有应用
 
 refer: [https://github.com/jinlife/Synology_Photos_Face_Patch]
@@ -13,8 +13,17 @@ refer: [https://github.com/jinlife/Synology_Photos_Face_Patch]
 ```
 #include <stdio.h>
 
-long long _ZN9synophoto6plugin7network9IeNetwork11IsSupportedEv() {
+// patch libsynophoto-plugin-platform.so 
+long long _ZN9synophoto6plugin8platform20IsSupportedIENetworkEv() {
     return 0LL;
+}
+
+long long _ZN9synophoto6plugin8platform18IsSupportedConceptEv() {
+	return 1LL;
+}
+
+long long _ZN9synophoto6plugin8platform23IsSupportedIENetworkGpuEv() {
+	return 0LL;
 }
 
 __attribute__((constructor)) void main() {
